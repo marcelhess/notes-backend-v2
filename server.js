@@ -20,8 +20,8 @@ app.use('/api/v1/auth', authRoutes);
 app.use('/api/v1/notes', notesRoutes);
 
 // Test-Route
-app.get('/api/v1/health', (req, res) => {
-  res.json({ status: 'ok' });
+app.get('/', (req, res) => {
+  res.json({ status: 'ok', appName: 'Notes App', version: '1.0.0', message: 'Server is running' });
 });
 
 app.use(errorHandler);
