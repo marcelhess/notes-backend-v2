@@ -15,8 +15,7 @@ connectDB();
 
 // Updated CORS configuration to allow multiple origins
 const allowedOrigins = [
-  process.env.FRONTEND_URL || 'https://your-production-frontend.com',
-  'http://localhost:5173',  // Local development frontend
+  'https://notes-frontend-v2.vercel.app', 'http://localhost:5173',  // Local development frontend
   'http://localhost:3000'   // Alternative local development port
 ];
 
